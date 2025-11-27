@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="bg" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VhodPro | Професионален Домоуправител</title>
+    <meta name="description" content="Професионален домоуправител за спокойствието на вашия вход. Стабилност и доверие." />
+    
+    <!-- GOOGLE ANALYTICS START -->
+    <!-- Постави своя Google Analytics (G-XXXXXXXXXX) скрипт тук -->
+    <!-- GOOGLE ANALYTICS END -->
+
+    <!-- FACEBOOK PIXEL START -->
+    <!-- Постави своя Meta Pixel скрипт тук -->
+    <!-- FACEBOOK PIXEL END -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: '#1E293B', // Slate Prime
+                accent: '#D97706', // Amber Accent
+                accentHover: '#B45309',
+                light: '#F1F5F9', // Concrete White
+                gray: '#94A3B8'
+              }
+            },
+            fontFamily: {
+              sans: ['Roboto', 'sans-serif'],
+              display: ['Montserrat', 'sans-serif'],
+            },
+            backgroundImage: {
+              'grid-pattern': "linear-gradient(#cbd5e1 1px, transparent 1px), linear-gradient(90deg, #cbd5e1 1px, transparent 1px)",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F1F5F9;
+        color: #1E293B;
+        font-family: 'Roboto', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+      }
+      
+      /* Architectural diagonal stripes pattern */
+      .bg-stripes {
+        background-image: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 10px,
+          rgba(255, 255, 255, 0.05) 10px,
+          rgba(255, 255, 255, 0.05) 20px
+        );
+      }
+      .bg-stripes-dark {
+         background-image: repeating-linear-gradient(
+          45deg,
+          rgba(30, 41, 59, 0.03),
+          rgba(30, 41, 59, 0.03) 10px,
+          transparent 10px,
+          transparent 20px
+        );
+      }
+      
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(30, 41, 59, 0.1);
+      }
+      
+      .architect-card {
+        background-color: #1E293B;
+        color: white;
+        border-bottom: 4px solid #D97706;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .architect-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .text-outline {
+        -webkit-text-stroke: 1px rgba(255,255,255,0.1);
+        color: transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
